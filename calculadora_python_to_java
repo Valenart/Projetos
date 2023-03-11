@@ -1,0 +1,108 @@
+package calculadora_python_java;
+
+import java.util.Scanner;
+
+public class CALCULADORA_PYTHON_JAVA {
+
+    public static void main(String[] args) {
+        
+        //PARA AS ENTRADAS
+            int soma = 1;
+            int subtracao = 2;
+            int multiplicacao = 3;
+            int divisao = 4; 
+            int resultadoDaEscolha = 0;
+
+        //PARA AS SOMAS
+            double soma1 = 0;
+            double soma2 = 0;
+            double resultadoSoma = 0;
+        
+        //PARA AS SUBTRACOES
+           
+            double subtracao1 = 0;
+            double subtracao2 = 0;
+            double resultadoSubtracao = 0;
+        
+        // PARA AS MULTIPLICACOES
+            
+            double multiplicacao1 = 0;
+            double multiplicacao2 = 0;
+            double resultadoMultiplicacao = 0;
+        
+        // PARA AS DIVISOES
+            
+            double divisao1 = 0;
+            double divisao2 = 0;
+            double resultadoDivisao = 0;
+            
+        // SCANNER
+        
+            Scanner entrada = new Scanner(System.in);
+        
+        System.out.println("==========TESTE DE CALULADORA JAVA==========");
+        
+            System.out.println("DIGITE O NUMERO CORRESPONDENTE PARA A CONTA: "
+                + System.lineSeparator() + "1- SOMA"
+                + System.lineSeparator() + "2- SUBTRACAO"
+                + System.lineSeparator() + "3- MULTIPLICACAO"
+                + System.lineSeparator() + "4- DIVISAO");
+            System.out.println(" ");
+            
+            resultadoDaEscolha = entrada.nextInt();    
+                    
+            if (resultadoDaEscolha == 1) {
+               System.out.println("Qual e o primeiro numero da soma? ");
+               soma1 = entrada.nextDouble();
+               
+               System.out.println("Qual e o segundo numero da soma? ");
+               soma2 = entrada.nextDouble();
+               
+                resultadoSoma = soma1 + soma2; 
+               System.out.println("O resultado da soma sera de " +
+                       resultadoSoma);               
+           }
+           
+            else if (resultadoDaEscolha == 2) {
+               System.out.println("Qual e o primeiro numero da subtracao? ");
+               subtracao1 = entrada.nextDouble();
+               
+               System.out.println("Qual e o segundo numero da subtracao? ");
+               subtracao2 = entrada.nextDouble();
+               
+               resultadoSubtracao = subtracao1 - subtracao2; 
+               System.out.println("O resultado da subtracao sera de " +
+                       resultadoSubtracao);
+            }
+                    
+            else if (resultadoDaEscolha == 3) {
+               System.out.println("Qual e o primeiro numero da "
+                       + "multiplicacao? ");
+               multiplicacao1 = entrada.nextDouble();
+               
+               System.out.println("Qual e o segundo numero da "
+                       + "multiplicacao? ");
+               multiplicacao2 = entrada.nextDouble();
+               
+               resultadoMultiplicacao = multiplicacao1 * multiplicacao2; 
+               System.out.println("O resultado da multiplicacao sera de " +
+                       resultadoMultiplicacao);
+            }
+                    
+            else if (resultadoDaEscolha == 4){
+                System.out.println("Qual e o primeiro numero da divisao? ");
+                divisao1 = entrada.nextDouble();
+               
+                System.out.println("Qual e o segundo numero da divisao? ");
+                divisao2 = entrada.nextDouble();
+               
+                resultadoDivisao = divisao1 / divisao2; 
+                System.out.println("O resultado da divisao sera de " +
+                       resultadoDivisao);                                    
+            }        
+                    
+        
+        
+    }
+    
+}
